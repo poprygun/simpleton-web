@@ -1,0 +1,12 @@
+links-db:
+  image: mysql:5.7.5
+  restart: always
+  environment:
+    - MYSQL_ROOT_PASSWORD=letmein
+    - MYSQL_DATABASE=links-db
+    - MYSQL_USER=letmein
+    - MYSQL_PASSWORD=letmein
+  volumes:
+    - /var/lib/mysql
+  ports:
+    - "3306:3306"

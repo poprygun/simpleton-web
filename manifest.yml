@@ -1,0 +1,8 @@
+---
+applications:
+- name: simpleton-web
+  memory: 1G
+  path: ./target/simpleton-web.war
+  instances: 1
+  env:
+    DEBUG: "true"
